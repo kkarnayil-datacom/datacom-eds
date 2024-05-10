@@ -53,3 +53,36 @@
   
 }
 
+.section.columns-3 > div {
+  width: 100%;
+  padding: 0 !important;
+  margin: 0;
+  max-width: 100%;
+}
+
+.columns-3{
+
+
+  .cards > ul > li {
+    border: 0px;
+  }
+
+  .cards .cards-card-image {
+    line-height: 0;
+    margin-left: 0;
+  }
+
+  padding:0 !important;
+
+  .cards > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(278px, 1fr));
+    gap:0;
+}
+
+
+}
+
