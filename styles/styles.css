@@ -138,18 +138,21 @@ a.button:any-link, button {
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 30px;
+  padding: 10px 30px;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   cursor: pointer;
-  color: var(--dark-color);
+  color: #002bfe;
   background-color: #fff;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
