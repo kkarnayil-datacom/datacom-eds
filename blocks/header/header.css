@@ -145,6 +145,13 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  min-width: 220px;
+}
+
+header .nav-brand p{
+  color: #00125e !important;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 header nav .nav-brand img {
@@ -225,7 +232,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 2em;
+    gap: 4em;
     margin: 0;
     font-size: var(--body-font-size-xs);
   }
