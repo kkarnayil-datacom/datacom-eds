@@ -1,0 +1,43 @@
+.custom-columns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-columns img {
+  width: 100%;
+}
+
+.custom-columns h2{
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  margin:20px 0;
+  font-size:48px !important;
+}
+
+.custom-columns p{
+ font-size: 16px;
+}
+.custom-columns > div > div {
+  order: 1;
+}
+
+.custom-columns > div > .custom-columns-img-col {
+  order: 0;
+}
+
+.custom-columns > div > .custom-columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .custom-columns > div {
+    align-items: start;
+    flex-direction: unset;
+    gap: 115px;
+  }
+
+  .custom-columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

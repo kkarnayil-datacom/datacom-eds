@@ -208,3 +208,16 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+.section h2{
+  margin-top:0
+}
+
+.section.highlight-dark{
+  background-color:  #000a14;
+  color:white;
+
+  h2{
+    font-size: 24px;
+  }
+}
