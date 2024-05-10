@@ -1,8 +1,6 @@
 export default function decorate(block) {
 
-  console.log(block);
-
-  block.parentElement.prepend(document.createElement("hr"))
+  block.parentElement.prepend(document.createElement("hr"));
   
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
