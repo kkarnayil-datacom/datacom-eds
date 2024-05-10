@@ -18,14 +18,38 @@
 
 .cards .cards-card-image {
   line-height: 0;
+  margin-left: 6px;
 }
 
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+
+
+.section.highlight-dark{
+    .cards > ul > li {
+    border: 0;
+    background-color: #000a14;
+   }
+
+   .cards > ul > li img {
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+  }
+
+  .cards {
+     p {
+       font-size: 16px;
+     }
+     h3{
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.2px;
+      font-weight: 600;
+     }
+  }
+  
 }
+
