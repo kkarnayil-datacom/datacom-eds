@@ -1,4 +1,4 @@
-.cards > ul {
+.cards>ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   grid-gap: 16px;
 }
 
-.cards > ul > li {
+.cards>ul>li {
   border: 1px solid var(--dark-color);
   background-color: var(--background-color)
 }
@@ -21,50 +21,51 @@
   margin-left: 6px;
 }
 
-.cards .cards-card-body > *:first-child {
+.cards .cards-card-body>*:first-child {
   margin-top: 0;
 }
 
 
 
-.section.highlight-dark{
-    .cards > ul > li {
+.section.highlight-dark {
+  .cards>ul>li {
     border: 0;
     background-color: #000a14;
-   }
+  }
 
-   .cards > ul > li img {
+  .cards>ul>li img {
     height: 65px;
     width: 65px;
     object-fit: cover;
   }
 
   .cards {
-     p {
-       font-size: 16px;
-     }
-     h3{
+    p {
+      font-size: 16px;
+    }
+
+    h3 {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: 0.2px;
       font-weight: 600;
-     }
+    }
   }
-  
+
 }
 
-.section.columns-3 > div {
+.section.columns-3>div {
   width: 100%;
   padding: 0 !important;
   margin: 0;
   max-width: 100%;
 }
 
-.columns-3{
-  
-  padding:0 12px !important;
+.columns-3 {
 
-  .cards > ul > li {
+  padding: 0 12px !important;
+
+  .cards>ul>li {
     border: 0px;
   }
 
@@ -72,76 +73,74 @@
     line-height: 0;
     margin-left: 0;
   }
-  .cards > ul {
+
+  .cards>ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(1, minmax(278px, 1fr));
-    gap:0;
-}
+    gap: 0;
+  }
 
 
 }
 
-@media (width >= 900px) {
-  .columns-3{
+@media (width >=900px) {
+  .columns-3 {
 
-    padding:0 !important;
-  
-    .cards > ul > li {
+    padding: 0 !important;
+
+    .cards>ul>li {
       border: 0px;
       position: relative;
       background-color: rgba(0, 18, 95, 0.8);
-    }
-  
-    .cards .cards-card-image {
-      line-height: 0;
-      margin-left: 0;
       height: 800px;
+      overflow: hidden; 
     }
 
-    img{
+    .cards .cards-card-image {
+      height: 100%;
+    }
+
+    .cards>ul>li:hover img {
+      transform: scale(1.1);
+    }
+
+    img {
       object-fit: cover;
       height: 100%;
-      background-color: rgba(0, 18, 95, 0.8);
+      transition: transform .4s;
     }
 
-    .cards > ul {
+    .cards>ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: grid;
-    grid-template-columns: repeat(3, minmax(278px, 1fr));
-      gap:0;
-  }
+      grid-template-columns: repeat(3, minmax(278px, 1fr));
+      gap: 0;
+    }
 
-  .cards .cards-card-body {
-    background-color: rgba(0, 18, 95, 0.8);
-    margin: 0px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 80px 0 80px;
-    height: 800px;
+    .cards .cards-card-body {
+      background-color: rgba(0, 18, 95, 0.8);
+      margin: 0px;
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px 80px 0 80px;
+      height: 800px;
 
-    h3{
-      font-size: 48px;
-      letter-spacing: 2px;
-      font-weight: 100;
+      h3 {
+        font-size: 48px;
+        letter-spacing: 2px;
+        font-weight: 100;
+      }
     }
   }
-  }
 
-  .cards .cards-card-image:hover{
-    transform: scale(1.2);
-  }
-  .img:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
 }
-
