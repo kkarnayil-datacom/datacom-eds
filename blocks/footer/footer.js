@@ -15,16 +15,15 @@ export default async function decorate(block) {
   block.textContent = '';
   const footer = document.createElement('div');
   while (fragment.firstElementChild){
-     footer.append(fragment.firstElementChild);
+    console.log(fragment.firstElementChild);
+    footer.append(fragment.firstElementChild);
+  }
+  if(footer.querySelector(".columns")){
+    Array.from(footer.querySelector(".columns").children).forEach(child => {
+      child.classList.add('footer-column');
+    })
   }
 
-  const footerContent = document.querySelector('footer-content');
-  if(footerContent){
-    console.log(footerContent);
-    Object.values(footerContent.children).forEach((e) => {
-      e.classList.add('footer-column');
-    });
-  }
 
   block.append(footer);
 }
