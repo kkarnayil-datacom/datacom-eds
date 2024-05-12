@@ -1,6 +1,5 @@
 export default function decorate(block) {
-
-  block.parentElement.prepend(document.createElement("hr"));
+  block.parentElement.prepend(document.createElement('hr'));
   const cols = [...block.firstElementChild.children];
   block.classList.add(`columns-${cols.length}-cols`);
   // setup image columns

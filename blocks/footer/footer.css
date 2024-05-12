@@ -1,14 +1,33 @@
-footer {
-  padding: 2rem;
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-s);
-}
+@media (width >=900px) {
+  footer {
+    background: white;
+    margin-bottom: 48px;
+    margin-top: -80px;
 
-footer .footer {
-  max-width: 1200px;
-  margin: auto;
-}
+    .footer {
 
-footer .footer p {
-  margin: 0;
+      .columns {
+        display: flex;
+        flex-direction: row;
+        max-width: 1256px;
+
+        div{
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+          gap:0px;
+           div{
+            width: 100%;
+           }
+        }
+
+        p {
+          margin: 5px;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+      }
+
+    }
+  }
 }
